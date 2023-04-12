@@ -6,6 +6,8 @@ import Routes from "./Routes";
 import { GlobalStyle } from "./styles/globalStyles";
 import { darkTheme, lightTheme } from "./styles/theme";
 
+
+
 export const ThemeContext = React.createContext(null);
 
 const App = () => {
@@ -13,8 +15,10 @@ const App = () => {
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
 
     return (
+
         <ThemeContext.Provider value={{ setTheme, theme }}>
             <ThemeProvider theme={themeStyle}>
+
                 <GlobalStyle />
                 <Helmet>
                     <title>SafeAeon</title>

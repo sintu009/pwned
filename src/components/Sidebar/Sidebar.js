@@ -135,12 +135,25 @@ const linksArray = [
         to: "/DomainBreach",
 
     },
+    {
+        label: "AllPasteAcc",
+        icon: <AiOutlineApartment />,
+        to: "/AllPasteAcc",
+
+    },
+    {
+        label: "SHA1Converter",
+        icon: <AiOutlineSetting />,
+        to: "/SHA1Converter",
+    },
+
 ];
 
 const secondaryLinksArray = [
     {
         label: "Settings",
         icon: <AiOutlineSetting />,
+
     },
     {
         label: "Logout",
